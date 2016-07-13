@@ -10,4 +10,6 @@
 
 @interface AMGGTSCell : UICollectionViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *aMGImageView;
+
 @end

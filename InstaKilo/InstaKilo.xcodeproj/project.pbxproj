@@ -13,8 +13,9 @@
 		9CFEBEDB1D36BAD500742A47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CFEBED91D36BAD500742A47 /* Main.storyboard */; };
 		9CFEBEDD1D36BAD500742A47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CFEBEDC1D36BAD500742A47 /* Assets.xcassets */; };
 		9CFEBEE01D36BAD500742A47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CFEBEDE1D36BAD500742A47 /* LaunchScreen.storyboard */; };
-		9CFEBEE91D36BCB200742A47 /* AMGGTSCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFEBEE81D36BCB200742A47 /* AMGGTSCollectionViewController.m */; };
 		9CFEBEEC1D36BD0800742A47 /* AMGGTSCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFEBEEB1D36BD0800742A47 /* AMGGTSCell.m */; };
+		9CFEBEEF1D36D08600742A47 /* AMGImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFEBEEE1D36D08600742A47 /* AMGImage.m */; };
+		9CFEBEF21D36E43900742A47 /* HeaderCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFEBEF11D36E43900742A47 /* HeaderCollectionView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +29,12 @@
 		9CFEBEDC1D36BAD500742A47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CFEBEDF1D36BAD500742A47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CFEBEE11D36BAD500742A47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9CFEBEE71D36BCB200742A47 /* AMGGTSCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMGGTSCollectionViewController.h; sourceTree = "<group>"; };
-		9CFEBEE81D36BCB200742A47 /* AMGGTSCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMGGTSCollectionViewController.m; sourceTree = "<group>"; };
 		9CFEBEEA1D36BD0800742A47 /* AMGGTSCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMGGTSCell.h; sourceTree = "<group>"; };
 		9CFEBEEB1D36BD0800742A47 /* AMGGTSCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMGGTSCell.m; sourceTree = "<group>"; };
+		9CFEBEED1D36D08600742A47 /* AMGImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMGImage.h; sourceTree = "<group>"; };
+		9CFEBEEE1D36D08600742A47 /* AMGImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMGImage.m; sourceTree = "<group>"; };
+		9CFEBEF01D36E43900742A47 /* HeaderCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderCollectionView.h; sourceTree = "<group>"; };
+		9CFEBEF11D36E43900742A47 /* HeaderCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderCollectionView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,11 +71,13 @@
 				9CFEBED41D36BAD500742A47 /* AppDelegate.m */,
 				9CFEBED61D36BAD500742A47 /* ViewController.h */,
 				9CFEBED71D36BAD500742A47 /* ViewController.m */,
-				9CFEBEE71D36BCB200742A47 /* AMGGTSCollectionViewController.h */,
-				9CFEBEE81D36BCB200742A47 /* AMGGTSCollectionViewController.m */,
-				9CFEBED91D36BAD500742A47 /* Main.storyboard */,
+				9CFEBEF01D36E43900742A47 /* HeaderCollectionView.h */,
+				9CFEBEF11D36E43900742A47 /* HeaderCollectionView.m */,
 				9CFEBEEA1D36BD0800742A47 /* AMGGTSCell.h */,
 				9CFEBEEB1D36BD0800742A47 /* AMGGTSCell.m */,
+				9CFEBEED1D36D08600742A47 /* AMGImage.h */,
+				9CFEBEEE1D36D08600742A47 /* AMGImage.m */,
+				9CFEBED91D36BAD500742A47 /* Main.storyboard */,
 				9CFEBEDC1D36BAD500742A47 /* Assets.xcassets */,
 				9CFEBEDE1D36BAD500742A47 /* LaunchScreen.storyboard */,
 				9CFEBEE11D36BAD500742A47 /* Info.plist */,
@@ -162,7 +167,8 @@
 			files = (
 				9CFEBED81D36BAD500742A47 /* ViewController.m in Sources */,
 				9CFEBED51D36BAD500742A47 /* AppDelegate.m in Sources */,
-				9CFEBEE91D36BCB200742A47 /* AMGGTSCollectionViewController.m in Sources */,
+				9CFEBEEF1D36D08600742A47 /* AMGImage.m in Sources */,
+				9CFEBEF21D36E43900742A47 /* HeaderCollectionView.m in Sources */,
 				9CFEBEEC1D36BD0800742A47 /* AMGGTSCell.m in Sources */,
 				9CFEBED21D36BAD500742A47 /* main.m in Sources */,
 			);

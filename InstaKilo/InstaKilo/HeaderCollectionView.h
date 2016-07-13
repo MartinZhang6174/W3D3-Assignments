@@ -1,5 +1,5 @@
 //
-//  AMGGTSCollectionViewController.h
+//  HeaderCollectionView.h
 //  InstaKilo
 //
 //  Created by Martin Zhang on 2016-07-13.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AMGGTSCollectionViewController : UICollectionViewController
+@interface HeaderCollectionView : UICollectionReusableView
+
+@property (weak, nonatomic) IBOutlet UILabel *sectionLabel;
 
 @end

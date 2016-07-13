@@ -8,12 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AMGImage : UIImage
+@interface AMGImage : NSObject
 
 @property NSString *carName;
 @property NSString *carMake;
 @property NSString *carBodyType;
 
-- (UIImage *)initImageWithImageName:(NSString *)name make:(NSString *)make andBodyType:(NSString *)body;
+@property (nonatomic, strong) UIImage * carImage;
+
+- (instancetype)initImageWithImageName:(NSString *)name
+                                  make:(NSString *)make
+                           andBodyType:(NSString *)body;
 
 @end

@@ -10,11 +10,16 @@
 
 @implementation AMGImage
 
--(UIImage *)initImageWithImageName:(NSString *)name make:(NSString *)make andBodyType:(NSString *)body {
-    self.carName = name;
-    self.carMake = make;
-    self.carBodyType = body;
+-(instancetype)initImageWithImageName:(NSString *)name make:(NSString *)make andBodyType:(NSString *)body {
+    if (self = [super init]) {
+        self.carName = name;
+        self.carMake = make;
+        self.carBodyType = body;
+        self.carImage = [UIImage imageNamed:name];
+    }
     return self;
 }
+
+
 
 @end

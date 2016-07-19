@@ -80,7 +80,7 @@ typedef NS_ENUM(NSInteger, CarCategory) {
                     if ([pic.carMake isEqualToString:aMake]) {
                         [make addObject:pic];
                     }
-                }
+                } 
                 [self.makeDictionary setObject:make
                                         forKey:aMake];
             }
@@ -111,7 +111,8 @@ typedef NS_ENUM(NSInteger, CarCategory) {
 
     switch (self.sortingSwitch.selectedSegmentIndex) {
         case CarCategoryMake: {
-            NSMutableArray *aMakeArray = [self.makeDictionary.allValues objectAtIndex:section];
+//            NSMutableArray *aMakeArray = [self.makeDictionary.allValues objectAtIndex:section];
+            NSMutableArray *aMakeArray = self.makeDictionary.allValues[section];
             return aMakeArray.count;
         }
             break;
@@ -122,7 +123,6 @@ typedef NS_ENUM(NSInteger, CarCategory) {
         }
             break;
     }
-    
     return 0;
 }
 
